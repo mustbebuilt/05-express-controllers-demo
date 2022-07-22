@@ -1,7 +1,19 @@
-body{
+body {
     font-family: Arial, Helvetica, sans-serif;
 }
-.container{
-    max-width:600px;
-    margin:auto;
+
+.container {
+    max-width: 600px;
+    margin: auto;
+    border: 1px #ccc solid;
+    border-radius: 8px;
+    padding: 10px 15px;
+}
+
+.container img {
+    width: 80%;
+}
+
+footer {
+    text-align: center;
 }
