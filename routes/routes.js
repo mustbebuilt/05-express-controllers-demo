@@ -23,40 +23,38 @@ var staffDataPromise = async () => {
 staffDataPromise();
 // console.dir(staffData);
 
-module.exports = () => {
-  router.get("/example", (req, res) => {
-    return res.render("example", {
-      title: "EJS Example",
-      message: "Hello Template"
-    });
+router.get("/example", (req, res) => {
+  return res.render("example", {
+    title: "EJS Example",
+    message: "Hello Template",
   });
+});
 
-  router.get("/main", (req, res) => {
-    return res.render("main", {
-      title: "EJS Example from Parts",
-      message: "Hello Template built in parts",
-      showMsg: true,
-      headingOne: "Page made from parts"
-    });
+router.get("/main", (req, res) => {
+  return res.render("main", {
+    title: "EJS Example from Parts",
+    message: "Hello Template built in parts",
+    showMsg: true,
+    headingOne: "Page made from parts",
   });
+});
 
-  // dogs route
+// dogs route
 
-  router.get("/dogs", (req, res) => {
-    return res.render("dogs-loop", {
-      title: "Looping Data with EJS",
-      dogs: dogData
-    });
+// router.get("/dogs", (req, res) => {
+//   return res.render("dogs-loop", {
+//     title: "Looping Data with EJS",
+//     dogs: dogData,
+//   });
+// });
+
+// staff route
+
+router.get("/staff", (req, res) => {
+  return res.render("staff-loop", {
+    title: "Staff Data",
+    staffList: staffData,
   });
+});
 
-  // staff route
-
-  router.get("/staff", (req, res) => {
-    return res.render("staff-loop", {
-      title: "Staff Data",
-      staffList: staffData
-    });
-  });
-
-  return router;
-};
+module.exports = router;
