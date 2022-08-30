@@ -22,4 +22,11 @@ router.get("/main", (req, res) => {
   });
 });
 
+router.get("/search", (req, res) => {
+  return res.render("search", {
+    title: "Sample of Posting Data",
+    msg: "Search the database",
+  });
+});
+
 module.exports = router;
