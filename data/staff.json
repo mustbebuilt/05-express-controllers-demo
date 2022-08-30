@@ -1,5 +1,5 @@
 [
-    {"name":"Fred","job":"Butcher"},
-    {"name":"Bob","job":"Builder"},
-    {"name":"Jane","job":"Plumber"}
+  { "name": "Fred", "job": "Butcher" },
+  { "name": "Bob", "job": "Builder" },
+  { "name": "Jane", "job": "Plumber" }
 ]
